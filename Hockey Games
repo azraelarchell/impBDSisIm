@@ -1,0 +1,95 @@
+/*
+
+CREATE TABLE playoffround (
+id INT (16) NOT NULL,
+team1id INT (13) NOT NULL,
+team1id INT (13) NOT NULL,
+starttime date  NOT NULL,
+endtime  date NOT NULL,
+roundnum INT (14) NOT NULL,
+PRIMARY KEY (IDplaypffround)
+);
+
+
+CREATETABLE HockeyGame (
+idINT(16) NOT FULL,
+rounddid INT
+team1id INT (13) NOT FULL,
+team2id INT (13) NOT FULL,
+Startime date NOT FULL,
+descripcion VARCHAR (20) NOT FULL,
+PRIMARY KE(IDHockeyGames)
+);
+
+
+CREATE TABLE GameScores(
+IDGamesScores VARCHAR (15) NOT  FULL,
+team1score INT (3) NOT FULL,
+team2score INT (3) NOT NULL,
+PRIMARY KEY (IDGamesScores)
+);
+
+CREATE TABLE  HockeyTeam (
+ID Team VARCHAR (45) NOT NULL,
+name VARCHAR (30) NOT NULL,
+logolink VARCHAR (100) NOT NULL,
+PRYMARY KEY (IDTeam)
+);
+
+CREATE TABLE HockeyTeam_Player (
+IDhockeygameplayer VARCHAR (15) NOT NULL,
+IDTeam VARCHAR (15) NOT NULL,
+firstname VARCHAR (15) NOT NULL,
+lastname VARCHAR (15) NOT NULL,
+JERSEYNUM INT (2) NOT NULL,
+PRIMARY KEY (idroundstats)
+);
+
+CREATE TABLE RoundStats (
+IDroundstats VARCHAR (15) NOT NULL,
+numShoutouts INT(1),
+goaldLeaderID VARCHAR (30) NOT NULL,
+assistLeaderID VARCHAR (30) NOT NULL,
+penaltyLeaderID VARCHAR (30) NOT NULL,
+plusminusLeaderID VARCHAR (30) NOT NULL,
+faceoffsWonLeader VARCHAR (30) NOT NULL,
+sogLeaderID VARCHAR (30) NOT NULL,
+PRIMARY KEY (IDroundstats)
+);
+
+CREATE TABLE Userstatspicks (
+IDuserstatspicks VARCHAR (15) NOT NULL,
+userID VARCHAR (20) NOT NULL,
+numshutouts INT (1),
+goalLeaderID VARCHAR (30) NOT NULL, 
+assistLeaderID VARCHAR (30) NOT NULL,
+penaltyLeaderID VARCHAR (30) NOT NULL,
+plusminusLeaderID VARCHAR (30) NOT NULL,
+faceoffsWonLeaderID VARCHAR (30) NOT NULL,
+sogLeaderID VARCHAR (30) NOT NULL,
+PRIMARY KEY (IDuserstatspicks)
+);
+
+CREATE TABLE User (
+IDuser VARCHAR (15) NOT NULL,
+username VARCHAR (10) NOT NULL,
+password VARCHAR (30) NOT NULL,
+PRIMARY KEY (IDuser)
+);
+
+CREATE TABLE UseScorePicks (
+IDuserscorepicks VARCHAR (15) NOT NULL,
+team1score INT (3) NOT NULL,
+team2score INT (3) NOT NULL,
+IDhockeygame VARCHAR (15) NOT NULL,
+PRIMARY KEY (IDuserscorepicks)
+);
+
+CREATE TABLE Userinfo (
+IDuserinfo VARCHAR (15) NOT NULL,
+first_name VARCHAR (15) NOT NULL,
+last_name VARCHAR (15) NOT NULL,
+email VARCHAR (80)  NOT NULL,
+PRIMARY KEY (IDuserinfo)
+),
+*/
