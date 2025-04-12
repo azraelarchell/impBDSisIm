@@ -1,0 +1,92 @@
+Ronda de playoffs de Tabla
+CREAR TABLA Ronda de Playoffs (
+id INT CLAVE PRIMARIA,
+equipo1Id INT,
+equipo2Id INT,
+hora de inicio FECHA Y HORA,
+fecha y hora de finalización,
+roundNum INT
+);
+
+-- Estadísticas de la ronda de Tabla
+CREAR TABLA RoundStats (
+id INT CLAVE PRIMARIA,
+numBlanqueos INT,
+ID de líder de objetivo INT,
+ID de líder de asistencia INT,
+Id. del líder de la penalización INT,
+plusMinusLeaderId INT,
+enfrentamientosGanadosIdLíder INT
+);
+
+-- Tabla UserStatsPicks
+CREAR TABLA UserStatsPicks (
+id INT CLAVE PRIMARIA,
+roundId INT,
+ID de líder de objetivo INT,
+ID de líder de asistencia INT,
+Id. del líder de la penalización INT,
+plusMinusLeaderId INT,
+enfrentamientosGanadosIdLíder INT
+);
+
+--Juego de hockey de tabla
+CREAR TABLA HockeyGame (
+id INT CLAVE PRIMARIA,
+roundId INT,
+hora de inicio FECHA Y HORA,
+descripción TEXTO,
+equipo1Id INT,
+team2Id INT
+);
+
+--Equipo de hockey de tabla
+CREAR TABLA HockeyTeam (
+id INT CLAVE PRIMARIA,
+nombre VARCHAR(50),
+logotipo VARCHAR(255)
+);
+
+-- Usuario de Tabla
+CREAR TABLA Usuario (
+id INT CLAVE PRIMARIA,
+nombre de usuario VARCHAR(50),
+contraseña VARCHAR(50)
+);
+
+-- Tabla UserScorePicks
+CREAR TABLA UserScorePicks (
+id INT CLAVE PRIMARIA,
+ID de juego de hockey INT,
+equipo1Puntuación INT,
+equipo2Score INT,
+ID de usuario INT
+);
+
+-- Tabla GameScores
+CREAR TABLA GameScores (
+id INT CLAVE PRIMARIA,
+equipo1Puntuación INT,
+equipo2Score INT
+);
+
+-- Jugador del equipo de hockey de tabla
+CREAR TABLA HockeyTeamPlayer (
+id INT CLAVE PRIMARIA,
+ID del equipo de hockey INT,
+nombreVARCHAR(50),
+apellido VARCHAR(50),
+jerseyNum INT,
+posición VARCHAR(50)
+);
+
+-- Información del usuario de Tabla
+CREAR TABLA UserInfo (
+id INT CLAVE PRIMARIA,
+nombreVARCHAR(50),
+apellido VARCHAR(50),
+correo electrónico VARCHAR(100),
+ronda1Puntos INT,
+round2Points INT,
+ronda3Puntos INT
+);
